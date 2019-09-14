@@ -14,6 +14,8 @@ def home():
     
     return redirect('/filter_output/{0}'.format(region1))
 
+
+
 @app.route('/filter_output/<place>')
 def filtering2(place):
     data1=filter_region(place)
@@ -38,11 +40,11 @@ def iframe_detail(places):
 
 @app.route('/filter_output',methods=['POST'])
 def filtering1():
-    season = request.form.get('season')
-    region = request.form.get('region')
-    geography = request.form.get('geography')
+    season = request.form.get('Season')
+    region = request.form.get('Region')
+    geography = request.form.get('Geography')
     data = filtering(season, region, geography)
-    return render_template('index.html', data = data )
+    return render_template('screen3.html', data = data )
     
    
 
