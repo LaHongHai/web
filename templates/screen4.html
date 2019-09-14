@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+    .bgimg{
+    width: 100%;
+    height: 100%;
+    background-image: url('C:/Users/PC1/Desktop/web/backgroundscreen3.png');
+    background-size: 100% 100%;
+    }
+
+    #myImg:hover {opacity: 0.7;}
+    #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+    /* The Modal (background) */
+    .modal {
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full --width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+    .bgimg1{
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/image/backgroundscreen2.png');
+    background-size: 100% 100%;
+
+    }
+
+
+    /* Modal Content (image) */
+    .modal-content {
+    margin: 300px;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 65%;
+    bottom: 0px;
+    display: block;
+    /* width: 50%; */
+    max-width: 700px;
+    position: absolute;
+    }
+
+    /* Caption of Modal Image */
+    /* #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    } */
+
+    /* Add Animation */
+    .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+    }
+
+    @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+    }
+
+    /* The Close Button */
+    .close {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    color: #663300;
+    font-size: 160px;
+    font-weight: bold;
+    transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .close_para{
+    color: #663300;
+    position: absolute;
+    top: 100px;
+    left: 210px;
+    font-size: 35px;
+    font-weight: bolder;
+
+    }
+    .close_para:hover,
+    .close_para:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+    .modal-content {
+    width: 100%;
+    }
+    }
+    .arrow-left {
+
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid #663300;
+    border-bottom: 25px solid transparent;
+
+    }
+    .w3-merriweather {
+        color: #663300;
+        
+        font-family: 'Merriweather', serif;
+    }
+    .dot {
+    height: 20px;
+    width: 20px;
+    background-color: #C46420;
+    border-radius: 50%;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-left:10px;
+    }
+    .w3-roboto{
+       color: #C46420;
+       font-family: 'Roboto', sans-serif;
+       font-size: 30px;
+
+    }
+    .display-right{
+      display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="bgimg w3-main w3-display-container" style="min-height: 1001px; min-width: 1200px;">
+        <div class="w3-display-middle w3-round-xxlarge w3-display-container  " style="background-color:#FFCC99;border: 3px solid #CD8E51;width: 88%;height: 776px;">
+            <div class="w3-display-topleft " style="margin-left:100px; margin-top:30px;">
+                    <h1 class="w3-merriweather" style="font-size: 110px; margin:0px;font-weight: bold;height: 288px; width: 30%;">HAI PHONG </h1>
+                    <div style="width:20%;"><a href="#"><div class="arrow-left " style="margin-top:20px; margin-right: 0px;" ></div></a></div>
+        
+            </div>
+            <div class="w3-display-bottomleft w3-display-container" style="width:40%;height:300px;">
+                <div class="display-right w3-roboto"  >
+                  <div>
+                    data.Region
+                  
+                <span class="dot"></span>
+                  </div></div>
+
+                  <div class="display-right w3-roboto" >
+                    <div>
+                    {% for i in data.Season%}
+                    {{i}} 
+                    {% endfor %}
+                      
+                  <span class="dot"></span>
+                  </div></div>
+
+                  <div class="display-right w3-roboto"  >
+                    <div>
+                        {% for i in data.Geography%}
+                        {{i}} 
+                        {% endfor %}
+                    
+                    <span class="dot"></span>
+                    
+                </div>
+              </div>
+            </div>
+          <div class="w3-display-right" style="width:45%;height: 500px;margin-right: 80px;">
+              <iframe src="/static/image/smallscreen4.html" style="border:none;width:100%;height: 100%;"></iframe>
+          </div>
+
+
+      </div>
+
+        <div class="w3-display-bottomleft">
+                <img src="/static/image/smallrabbit.png" style="width:213px; height:10; margin-left: 130px;">
+                <img src="/static/image/rabbit ask me.png" style="width:319px; height:50; margin-bottom: 0px;margin-top: 100px;" id="myImg">
+        </div>
+        
+    </div>
+<!-- The Modal -->
+
+</div>
+<div id="myModal" class="modal bgimg1">
+    <span class="close">&times;</span>
+    <span class="close_para w3-merriweather ">CLOSE</span>
+    <img class="modal-content" id="img01">
+    <!-- <div id="caption"></div> -->
+  </div>
+  <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = "C:/Users/PC1/Desktop/web/bigrabbit.png";
+    
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var span_x=document.getElementsByClassName("close_para")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        span_x.onclick = function() { 
+          modal.style.display = "none";
+        }
+        //when the user hover on <span> (x)
+        span.onmouseover = function(){
+          span_x.style.color = "#bbb";
+          span.style.color = "#bbb";
+
+        }
+        span.onmouseout = function(){
+          span_x.style.color = "#663300";
+          span.style.color = "#663300";
+
+        }
+        span_x.onmouseover = function(){
+          span.style.color = "#bbb";
+          span_x.style.color = "#bbb";
+
+        }
+        span_x.onmouseout = function(){
+          span.style.color = "#663300";
+          span_x.style.color = "#663300";
+
+        }
+</script>
+
+</body>
+</html>
