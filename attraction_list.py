@@ -72,7 +72,7 @@ mylist =[
     "Description":"Phu Quoc island is a part of Kien Giang province. It is the largest island of Vietnam, with a total acreage of 574 square kilometers. Besides the charming beaches, this place is also famous for being the largest camp for prisoners of South Vietnam during the Vietnam War. Nowadays, many people come here for a quick escape to the beach town or to get closer to mother nature while trekking or camping in the national park. Phu Quoc Island has a tropical climate which has three seasons: High, Shoulder and Low Season. High Season: During the period between November to March, where the daily maximum temperature is typically and on average about 31 C, and the daily minimum temperatures (before sunrise) about 23 C. The skies are generally sunny, with possibly some light high cloud in early morning that clears by mid-morning, and the humidity is at it lowest throughout the year. Shoulder Season: During the period between April to June and late October, where the temperatures are a bit higher than during the high season, and the humidity around 80-85%. Crowds are less during this time and good chances of reasonable weather. Low Season: During the period between July to September, which is dominated by the monsoons."
     },
     {"Id":10, 
-    "Place":"Cai Be floating market",
+    "Place":"Cai Be",
     "Region":"Southern Vietnam",
     "Season":["Spring","Summer","Autumn","Winter"],
     "Geography":["Plain"],
