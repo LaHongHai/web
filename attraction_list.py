@@ -121,10 +121,9 @@ def filter_region(region1):
         if tour['Region'] == region1:
             filtered_regions.append(tour)
     return filtered_regions
-filtered_names = []
+
 def filtered_name(name):
-    global filtered_names
-    filtered_names.clear
+    filtered_names = []
     for tour in mylist:
         if tour['Place'] == name:
             filtered_names.append(tour)
