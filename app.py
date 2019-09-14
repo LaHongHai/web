@@ -19,7 +19,6 @@ def home():
 @app.route('/filter_output/<place>')
 def filtering2(place):
     data1=filter_region(place)
-    print(data1)
     # data1 = request.args['data1']
     # data1= session['data1']
     return render_template('screen3.html',data=data1)
@@ -44,7 +43,7 @@ def filtering1():
     region = request.form.get('Region')
     geography = request.form.get('Geography')
     data = filtering(season, region, geography)
-    return render_template('screen3.html', data = data )
+    return redirect(url_for('/filter_output//{0}/{1}/{2}'.format(season,region,geography)))
     
    
 
