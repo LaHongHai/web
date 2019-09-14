@@ -11,20 +11,22 @@ def home():
     region1=request.form['radio']
 
     data1=filter_region(region1)
-    session['data1'] = data1
-    return redirect(url_for('.filtering2', data1 = data1))
+    
+    return redirect('/filter_output/{0}'.format(region1))
 
-@app.route('/filter_output')
-def filtering2():
-    data1 = request.args['data1']
-    data1= session['data1']
-    return render_template('screen3.html')
+@app.route('/filter_output/<place>')
+def filtering2(place):
+    data1=filter_region(place)
+    print(data1)
+    # data1 = request.args['data1']
+    # data1= session['data1']
+    return render_template('screen3.html',data=data1)
 @app.route('/details/<places>')
 def details(places):
-    print(places)
+
     data1=filtered_name(places)
     data2=data1[0]
-    print(data2)
+
     return render_template('screen4.html',data=data2)
 @app.route('/iframe/<places>')
 def iframe_detail(places):
@@ -45,4 +47,4 @@ def filtering1():
    
 
 if __name__=="__main__":
-    app.run()
+    app.run(debug=True)

@@ -1,6 +1,6 @@
 mylist =[
     {"Id":1, 
-    "Place":"Co To Island",
+    "Place":"Co To",
     "Region":"Northern Vietnam",
     "Season":["Summer"],
     "Geography":["Coastal","Mountainous"],
@@ -33,7 +33,7 @@ mylist =[
     },
     {"Id":5, 
     "Place":"Ba Na Hills",
-    "Region":"Central Vietnam",
+    "Region":"Middle Vietnam",
     "Season":["Summer","Winter","Spring","Autumn"],
     "Geography":["Mountainous"],
     "Location":"Ba Na Hills is a hill station and resort located in the Truong Son Mountains west of the city of Da Nang, in central Vietnam.",
@@ -41,7 +41,7 @@ mylist =[
     },
     {"Id":6, 
     "Place":"Hoi An",
-    "Region":"Central Vietnam",
+    "Region":"Middle Vietnam",
     "Season":["Spring"],
     "Geography":["Plain"],
     "Location":"Hoi An is a city with a population of approximately 120,000 in Vietnam's Quảng Nam Province",
@@ -49,7 +49,7 @@ mylist =[
     },
     {"Id":7, 
     "Place":"Quy Nhon",
-    "Region":"Central Vietnam",
+    "Region":"Middle Vietnam",
     "Season":["Summer"],
     "Geography":["Coastal"],
     "Location":"Quy Nhon is a coastal city in Binh Dinh Province in central Vietnam. It is composed of 16 wards and five communes with a total of 284 km². Quy Nhon is the capital of Binh Dinh Province.",
@@ -57,7 +57,7 @@ mylist =[
     },
     {"Id":8, 
     "Place":"Nha Trang",
-    "Region":"Central Vietnam",
+    "Region":"Middle Vietnam",
     "Season":["Summer"],
     "Geography":["Coastal"],
     "Location":"Nha Trang is a coastal city and capital of Khanh Hoa Province, on the South Central Coast of Vietnam. It is bounded on the north by Ninh Hoa district, on the south by Cam Ranh town and on the west by Dien Khanh District.",
@@ -99,10 +99,9 @@ mylist =[
 ]
 
 
-filtered_places = []
 def filtering(region, season, geography):
-    global filtered_places
-    filtered_places.clear
+    filtered_places = []
+
     for tour in mylist:
         if tour['Region'] == region:
             if season in tour['Season']:
@@ -113,10 +112,8 @@ def filtering(region, season, geography):
     return filtered_places
 
 
-filtered_regions = []
 def filter_region(region1):
-    global filtered_regions
-    filtered_regions.clear
+    filtered_regions = []
     for tour in mylist:
         if tour['Region'] == region1:
             filtered_regions.append(tour)
