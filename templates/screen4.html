@@ -13,7 +13,7 @@
     .bgimg{
     width: 100%;
     height: 100%;
-    background-image: url('C:/Users/PC1/Desktop/web/backgroundscreen3.png');
+    background-image: url('/static/image/backgroundscreen3.png');
     background-size: 100% 100%;
     }
 
@@ -157,7 +157,7 @@
     .w3-roboto{
        color: #C46420;
        font-family: 'Roboto', sans-serif;
-       font-size: 30px;
+       font-size: 20px;
 
     }
     .display-right{
@@ -184,15 +184,18 @@
             <div class="w3-display-bottomleft w3-display-container" style="width:40%;height:300px;">
                 <div class="display-right w3-roboto"  >
                   <div>
-                    data.Region
+                   
+                    {{data.Region}}
+                  
                   
                 <span class="dot"></span>
                   </div></div>
 
                   <div class="display-right w3-roboto" >
                     <div>
-                    {% for i in data.Season%}
-                    {{i}} 
+
+                    {% for j in data.Season%}
+                    {{j}} 
                     {% endfor %}
                       
                   <span class="dot"></span>
@@ -200,9 +203,11 @@
 
                   <div class="display-right w3-roboto"  >
                     <div>
-                        {% for i in data.Geography%}
-                        {{i}} 
-                        {% endfor %}
+
+                      {% for j in data.Geography%}
+                      {{j}}
+                      {% endfor %}
+
                     
                     <span class="dot"></span>
                     
@@ -210,7 +215,7 @@
               </div>
             </div>
           <div class="w3-display-right" style="width:45%;height: 500px;margin-right: 80px;">
-              <iframe src="/static/image/smallscreen4.html" style="border:none;width:100%;height: 100%;"></iframe>
+              <iframe src="https://webtravel123.herokuapp.com/iframe/{{data.Place}}" style="border:none;width:100%;height: 100%;"></iframe>
           </div>
 
 

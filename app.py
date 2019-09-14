@@ -19,10 +19,18 @@ def filtering2():
     data1 = request.args['data1']
     data1= session['data1']
     return render_template('screen3.html')
-@app.route('/detail/<places>')
+@app.route('/details/<places>')
 def details(places):
-    data=filtered_name(places)
-    return render_template('screen4.html',data=data)
+    print(places)
+    data1=filtered_name(places)
+    data2=data1[0]
+    print(data2)
+    return render_template('screen4.html',data=data2)
+@app.route('/iframe/<places>')
+def iframe_detail(places):
+    data1=filtered_name(places)
+    data2=data1[0]
+    return render_template('smallscreen4.html',data=data2)
 
 
 
