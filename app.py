@@ -44,7 +44,7 @@ def filtering1():
     region = request.form.get('Region')
     geography = request.form.get('Geography')
     data = filtering(season, region, geography)
-    return render_template('screen3.html', data = data )
+    return redirect('screen3.html', data = data )
     
    
 

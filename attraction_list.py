@@ -103,9 +103,9 @@ def filtering(region, season, geography):
     filtered_places = []
 
     for tour in mylist:
-        if tour['Region'] == region or tour['Region'] == 'Region':
-            if season in tour['Season'] or tour ['Season']== 'Season':
-                if geography in tour['Geography'] or tour['Geography']== 'Geography':
+        if tour['Region'] == region or tour['Region'] == '':
+            if season in tour['Season'] or tour ['Season']== '':
+                if geography in tour['Geography'] or tour['Geography']== '':
                     filtered_places.append(tour)
                     # print(filtered_places)
 
