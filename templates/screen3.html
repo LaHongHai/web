@@ -46,7 +46,7 @@
     .bgimg1{
     width: 100%;
     height: 100%;
-    background-image: url('static/image/backgroundscreen2.png');
+    background-image: url('/static/image/backgroundscreen2.png');
     background-size: 100% 100%;
 
     }
@@ -192,7 +192,7 @@
         
         
             <h3 class="w3-merriweather" style="font-size: 30px; margin:0px;font-weight: bolder;">for you</h3>
-            <div style="width:20%"><a href="#"><div class="arrow-left " style="margin-top:20px;" ></div></a></div>
+            <div style="width:20%"><a href="https://webtravel123.herokuapp.com"><div class="arrow-left " style="margin-top:20px;" ></div></a></div>
 
         
     </div>
@@ -269,94 +269,50 @@
     <!-- <div id="caption"></div> -->
   </div>
   <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = "/static/image/bigrabbit.png";
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var span_x=document.getElementsByClassName("close_para")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        span_x.onclick = function() { 
+          modal.style.display = "none";
+        }
+                //when the user hover on <span> (x)
+                        span.onmouseover = function(){
+              span_x.style.color = "#bbb";
+              span.style.color = "#bbb";
     
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = "/static/image/bigrabbit.png";
-
-    }
+            }
+            span.onmouseout = function(){
+              span_x.style.color = "#663300";
+              span.style.color = "#663300";
     
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    var span_x=document.getElementsByClassName("close_para")[0];
+            }
+            span_x.onmouseover = function(){
+              span.style.color = "#bbb";
+              span_x.style.color = "#bbb";
     
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-      modal.style.display = "none";
-    }
-    span_x.onclick = function() { 
-      modal.style.display = "none";
-    }
-    var region = document.getElementById("region")
-    var region1 = document.getElementById("north")
-    var region2 = document.getElementById("middle")
-    var region3 = document.getElementById("south")
-    region1.onclick = function(){
-        region.innerHTML=region1.innerHTML
-    }
-    region2.onclick = function(){
-        region.innerHTML=region2.innerHTML
-    }
-    region3.onclick = function(){
-        region.innerHTML=region3.innerHTML
-    }
-    var season =document.getElementById("season")
-    var season1 =document.getElementById("spring")
-    var season2 =document.getElementById("summer")
-    var season3 =document.getElementById("autumn")
-    var season4 =document.getElementById("winter")
-    season1.onclick = function(){
-        season.innerHTML=season1.innerHTML
-    }
-    season2.onclick = function(){
-        season.innerHTML=season2.innerHTML
-    }
-    season3.onclick = function(){
-        season.innerHTML=season3.innerHTML
-    }
-    season4.onclick = function(){
-        season.innerHTML=season4.innerHTML
-    }
-    var geography = document.getElementById("geography")
-    var geography1 = document.getElementById("moutainous")
-    var geography2 = document.getElementById("plain")
-    var geography3 = document.getElementById("coastal")
-    geography1.onclick = function(){
-        geography.innerHTML=geography1.innerHTML
-    }
-    geography2.onclick = function(){
-        geography.innerHTML=geography2.innerHTML
-    }
-    geography3.onclick = function(){
-        geography.innerHTML=geography3.innerHTML
-    }
-            //when the user hover on <span> (x)
-                    span.onmouseover = function(){
-          span_x.style.color = "#bbb";
-          span.style.color = "#bbb";
-
-        }
-        span.onmouseout = function(){
-          span_x.style.color = "#663300";
-          span.style.color = "#663300";
-
-        }
-        span_x.onmouseover = function(){
-          span.style.color = "#bbb";
-          span_x.style.color = "#bbb";
-
-        }
-        span_x.onmouseout = function(){
-          span.style.color = "#663300";
-          span_x.style.color = "#663300";
-
-        }
-    </script>
+            }
+            span_x.onmouseout = function(){
+              span.style.color = "#663300";
+              span_x.style.color = "#663300";
+    
+            }
+        </script>
 </body>
 </html>

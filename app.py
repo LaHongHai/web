@@ -37,7 +37,7 @@ def iframe_detail(places):
 
 
 
-@app.route('/filter_output/Northern',methods=['POST'])
+@app.route('/filter_output/Northern VietNam',methods=['POST'])
 def filtering1():
     season = request.form.get('Season')
     region = request.form.get('Region')
