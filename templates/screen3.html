@@ -201,7 +201,7 @@
         
     </div>
     
-    <div class="w3-display-bottomleft" style="  position: fixed;
+    <div id='small_rabbit' class="w3-display-bottomleft" style="  position: fixed;
     top: 70%;
     left: 17%;
     transform: translate(-50%, -50%);
@@ -281,7 +281,8 @@
   <script>
         // Get the modal
         var modal = document.getElementById("myModal");
-        
+        var model_del= document.getElementById("small_rabbit")
+
         // Get the image and insert it inside the modal - use its "alt" text as a caption
         var img = document.getElementById("myImg");
         var modalImg = document.getElementById("img01");
@@ -289,6 +290,8 @@
         img.onclick = function(){
           modal.style.display = "block";
           modalImg.src = "/static/image/bigrabbit.png";
+          model_del.style.display="none"
+
         }
         
         // Get the <span> element that closes the modal
@@ -298,9 +301,13 @@
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() { 
           modal.style.display = "none";
+          model_del.style.display="block"
+
         }
         span_x.onclick = function() { 
           modal.style.display = "none";
+          model_del.style.display="block"
+
         }
                 //when the user hover on <span> (x)
                         span.onmouseover = function(){
