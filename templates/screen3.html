@@ -15,6 +15,9 @@
     height: 100%;
     background-image: url('/static/image/backgroundscreen3.png');
     background-size: 100% 100%;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
     }
     .w3-merriweather {
@@ -176,6 +179,7 @@
 
 }
 
+
     </style>
     <title>Document</title>
 </head>
@@ -197,17 +201,21 @@
         
     </div>
     
-    <div class="w3-display-bottomleft">
+    <div class="w3-display-bottomleft" style="  position: fixed;
+    top: 70%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    z-index: 2;">
         <img src="/static/image/smallrabbit.png" style="width:213px; height:10; margin-left: 110px;">
         <img src="/static/image/rabbit ask me.png " style="width:319px; height:50; margin-bottom: 150px;" id="myImg">
     </div>
-    <form class="w3-display-right"style="width:46%;margin-right: 70px;" methods="post">
+    <form class="w3-display-right"style="width:46%;margin-right: 70px;height:61%" method="post">
         <div class="w3-row-padding" style="padding: 0px;">
             <div class="w3-dropdown-hover " style="width:22%;background-color: transparent;">
                     <button class="w3-button w3-white w3-round-xxlarge div_vitri"  style="width:100%;background-color: #663300 !important;color: #CD8E51 !important;padding: 12px 16px;">Filter</button>
 
             </div>
-            <select name="season" class="w3-round-xxlarge div_vitri"  style="width:22%;margin-left:15px;height: 54px;padding-left: 15px;color: #D7CFC9;" >
+            <select name='season' class="w3-round-xxlarge div_vitri"  style="width:22%;margin-left:15px;height: 54px;padding-left: 15px;color: #D7CFC9;" >
                 <option value="" disabled selected>Season</option>
                 <option value="Spring">Spring</option>
                 <option value="Summer">Summer</option>
@@ -215,25 +223,26 @@
                 <option value="Winter">Winter</option>
 
             </select>
-            <select name="region" class="w3-round-xxlarge div_vitri"  style="width:22%;margin-left:15px;height: 54px;padding-left: 15px;color: #D7CFC9;">
+            <select name='region' class="w3-round-xxlarge div_vitri"  style="width:22%;margin-left:15px;height: 54px;padding-left: 15px;color: #D7CFC9;">
                 <option value="" disabled selected>Region</option>
 
-                <option value="Northern Vietnam">Northern Vietnam</option>
-                <option value="Middle Vietnam">Middle Vietnam</option>
-                <option value="Southern Vietnam">Southern Vietnam</option>
+                <option value="Northern Vietnam">North</option>
+                <option value="Middle Vietnam">Middle</option>
+                <option value="Southern Vietnam">South</option>
 
             </select>
 
-            <select name="geography" class="w3-round-xxlarge div_vitri"  style="width:22%;margin-left:15px;height: 54px;padding-left: 15px;color: #D7CFC9;  ">
+            <select name='geography' class="w3-round-xxlarge div_vitri"  style="width:22%;margin-left:15px;height: 54px;padding-left: 15px;color: #D7CFC9;  ">
                 <option value="" disabled selected>Geography</option>
 
-                <option value="Moutainous">Moutainous</option>
+                <option value="Mountainous">Mountainous</option>
                 <option value="Plain">Plain</option>
                 <option value="Coastal">Coastal</option>
 
             </select>
         </div>
-        <div id="main" method="POST">
+    
+        <div id="main" >
                 
             {% for i in data %}
             
@@ -258,6 +267,7 @@
         </div>
 
     </div>
+    <div class="bgimg" style="min-height: 400px;"></div>
 
 <!-- The Modal -->
 

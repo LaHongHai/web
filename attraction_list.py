@@ -64,7 +64,7 @@ mylist =[
     "Description":"Traces of human settlement in Nha Trang date back to the Cham Empire, though in times of Vietnamese rule, there wasn’t much more than small fishing villages. The French recognized that this beautiful bay, with its islands and white sand beaches, made for a perfect bathing spot, and began the transformation into a resort town. American soldiers agreed, and Nha Trang became a favorite vacation stop during the war. The monsoon season is from October to mid December. Sea winds can be heavy, and sometimes the weather can get pretty chilly. Summer, naturally, brings many vacation goers into town and hotel rooms get somewhat more difficult to find. Nha Trang beach city is well known for its pristine beaches and excellent scuba diving and is fast becoming a popular destination for international tourists, attracting large numbers of backpackers as well as more affluent travelers on the Southeast Asia circuit. It is already very popular with Vietnamese tourists. Nha Trang Bay is widely considered as amongst the world's most beautiful bays. The possibly most beautiful street of Nha Trang is Tran Phu Street along the seaside, sometimes referred to as the Pacific Coast Highway of Vietnam."
     },
     {"Id":9, 
-    "Place":"Phu Quoc Island",
+    "Place":"Phu Quoc",
     "Region":"Southern Vietnam",
     "Season":["Summer"],
     "Geography":["Coastal"],
@@ -103,10 +103,11 @@ def filtering(region, season, geography):
     filtered_places = []
 
     for tour in mylist:
-        if tour['Region'] == region or tour['Region'] == '':
-            if season in tour['Season'] or tour ['Season']== '':
-                if geography in tour['Geography'] or tour['Geography']== '':
-                    filtered_places.append(tour)
+        if (region != None) or (season != None) or  (geography != None) :
+            if tour['Region'] == region or region == None:
+                if season in tour['Season'] or season == None:
+                    if geography in tour['Geography'] or geography== None:
+                        filtered_places.append(tour)
                     # print(filtered_places)
 
     return filtered_places

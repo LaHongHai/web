@@ -8,9 +8,8 @@ def home_1():
     return render_template("home.html")
 @app.route("/",methods=['POST'])
 def home():
-    region1=request.form['radio']
+    region1=request.form.get('radio')
 
-    data1=filter_region(region1)
     
     return redirect('/filter_output/{0}'.format(region1))
 
@@ -21,6 +20,8 @@ def filtering2(place):
     data1=filter_region(place)
     # data1 = request.args['data1']
     # data1= session['data1']
+
+
     return render_template('screen3.html',data=data1)
 @app.route('/details/<places>')
 def details(places):
@@ -37,12 +38,13 @@ def iframe_detail(places):
 
 
 
-@app.route('/filter_output/Northern VietNam',methods=['POST'])
-def filtering1():
-    season = request.form.get('Season')
-    region = request.form.get('Region')
-    geography = request.form.get('Geography')
-    data = filtering(season, region, geography)
+@app.route('/filter_output/<place>',methods=['POST'])
+def filtering1(place):
+    season = request.form.get('season')
+    region = request.form.get('region')
+    geography = request.form.get('geography')
+    data = filtering(region, season, geography)
+
     return render_template("screen3.html",data=data)
     
    
