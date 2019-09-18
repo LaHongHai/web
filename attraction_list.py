@@ -112,7 +112,7 @@ mylist =[
     "Description":"180 km from Hanoi City, towards the northeast, it takes around 4 hours by bus due to arrive at Ha Long City and the wonderful Ha Long Bay. 1969 limestone islands of various shapes, sizes, and in different green and amazing colors rise above the sea level in an area of more than 1,500 square kilometers that creates this World Heritage site. Ha Long Bay still retains its historical and culture values. Ha Long Bay is as attractive and beautiful throughout the four seasons: spring, summer, autumn, and winter. Traveling on small sailboats among hundreds of limestone islands, one may visit the amazing Surprise Cave, the floating fishing village, and see how the locals live are top of the list of things to do here. On Titop Island, one may swim and relax on the beach or enjoy a kayaking program to the nearby Luon Cave and much more. Other attractions during your stay in Ha Long, beside exploring Ha Long Bay itself, if to visit the Royal Park in Halong City, Water Music, a circus performance by dolphins, sea lions, crocodiles, and much more. The experience of visiting Ha Long Bay will be unforgettable, where tourists will see something that will stay in their mind and eyes for years. Visitors will enjoy meeting Vietnamese people and tasting their delicious food having fresh air all day and night, especially if they choose to wake up early in the morning and watch the sun rise on the deck coming slowly through the islands."
     },    
     {"Id":15,
-    "Place":"Dalat",
+    "Place":"Da Lat",
     "Region":"Middle Vietnam",
     "Season":["Spring", "Summer", "Autumn", "Winter"],
     "Geography":["Mountainous"],
