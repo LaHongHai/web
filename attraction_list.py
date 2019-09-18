@@ -94,8 +94,55 @@ mylist =[
     "Geography":["Coastal","Mountainous"],
     "Location":"Vung Tau is the largest city and former capital of Ba Ria–Vung Tau Province in Vietnam.",
     "Description":"Located in the South of Viet Nam, 125 km away from Ho Chi Minh, Vung Tau is now considered the most popular destination for weekends from Ho Chi Minh. Vung Tau lies on a peninsula separated from the mainland by a gulf river called Co May river. It is a common saying that Vung Tau is naturally endowed of beautiful beaches, mountains around the city and cool climate throughout the year. Tourists cannot miss the extremely beautiful shore, the old famous light house, the statue of Jesus Christ with outstretched arms, unending delicious food and many more recreational venues. Located in Southern Vietnam, Vung Tau has only two seasons in a year. Dry season (November - April) is dry and slightly cooler during winter months and around Tet Holiday. The weather gets hotter in April. Rainy season (May - October) is rainy, but less than Ho Chi Minh City, usually hot at noon till 3PM. Summer is ideal for sea bathing. Vung Tau is rather small in size, so don't hesitate to take a walk. Recommended ways are: Bacu street (the city's downtown), Đo Chieu Street (food center), Trung Trac and Trung Nhị Square, Front Beach park and pavements along the coastline."
+    },
+    {"Id":13,
+    "Place":"Hoan Kiem Lake",
+    "Region":"Northern Vietnam",
+    "Season":["Spring", "Summer", "Autumn", "Winter"],
+    "Geography":["Plain"],
+    "Location":"Hoan Kiem Lake, which means 'Lake of the Returned Sword' or 'Lake of the Restored Sword', also known as Hồ Gươm, is a fresh water lake, measuring some 12 ha in the historical center of Hanoi, the capital city of Vietnam.",
+    "Description":"The lake has been called by several names including Luc Thuy, Ta Vong, Huu Vong and Thuy Quan. The current name 'Hoan Kiem' which translates as 'Lake of the Returned Sword' dates back to the 15th century. The lake is associated with a legend in which King Le Thai Tho returns a sword to a sacred turtle after defeating Ming dynasty invaders. The lake and its surroundings are one of the main attractions of Hanoi. The area surrounding the lake has lush greenery and two or three-storey buildings dating from the French colonial era. Hoan Kiem lake is surrounded by many historical and cultural structures: the old town with Hang Ngang, Hang Dao, Cau Go, Luong Van Can streets, the Western corner of French architecture with the Great Cathedral, Trang Thi, Hang Bai and Dinh Tien Hong street. But the iconic site is Ngoc Son Temple, the Pen Tower, Hoa Phong Tower and The Huc bridge. Ngoc Son temple occupies the largest island in the lake. Although surrounded by busy streets, Hoan Kiem Lake remains calm and romantic. This is why it is one of the nicest walking areas in Hanoi"
+    },
+    {"Id":14,
+    "Place":"Ha Long Bay",
+    "Region":"Northern Vietnam",
+    "Season":["Spring", "Summer", "Autumn", "Winter"],
+    "Geography":["Coastal"],
+    "Location":"Ha Long Bay is in northern Vietnam, 170 km (105 mi) east of Hanoi. Ha long Bay is a bay located in the area of the Gulf of Tangkia, north Vietnam. It has an area of 1,500 square kilometers and has a coastline about 120 kilometers away from Hanoi.",
+    "Description":"180 km from Hanoi City, towards the northeast, it takes around 4 hours by bus due to arrive at Ha Long City and the wonderful Ha Long Bay. 1969 limestone islands of various shapes, sizes, and in different green and amazing colors rise above the sea level in an area of more than 1,500 square kilometers that creates this World Heritage site. Ha Long Bay still retains its historical and culture values. Ha Long Bay is as attractive and beautiful throughout the four seasons: spring, summer, autumn, and winter. Traveling on small sailboats among hundreds of limestone islands, one may visit the amazing Surprise Cave, the floating fishing village, and see how the locals live are top of the list of things to do here. On Titop Island, one may swim and relax on the beach or enjoy a kayaking program to the nearby Luon Cave and much more. Other attractions during your stay in Ha Long, beside exploring Ha Long Bay itself, if to visit the Royal Park in Halong City, Water Music, a circus performance by dolphins, sea lions, crocodiles, and much more. The experience of visiting Ha Long Bay will be unforgettable, where tourists will see something that will stay in their mind and eyes for years. Visitors will enjoy meeting Vietnamese people and tasting their delicious food having fresh air all day and night, especially if they choose to wake up early in the morning and watch the sun rise on the deck coming slowly through the islands."
+    },    
+    {"Id":15,
+    "Place":"Dalat",
+    "Region":"Middle Vietnam",
+    "Season":["Spring", "Summer", "Autumn", "Winter"],
+    "Geography":["Mountainous"],
+    "Location":"Dalat, or Da Lat, is the capital of Lâm Đồng Province in Vietnam.",
+    "Description":"Dalat is a mid-sized city that looks like a cross between Vietnam and the French Alps. Outside of the city centre, it is surrounded by a series of pine-covered hills, lakes, and higher peaks, making for some lovely scenery quite different from the rest of Vietnam. Temperatures are pleasantly warm by day, and quite cool at night, down to perhaps 10 degrees Celsius. Be aware that during summer months, rain comes at least once a day and can sometimes dictate the mood and activities you are planning. The city centre is quite small and feels very urban, concrete, and patches of streets and buildings are in disrepair or construction. However, outside of the small urban centre is a spacious landscape of well kempt and pretty hotels, cafes, restaurants, and lakes peppered among the rolling green hills and pine trees to offer tourists an escape from city life. Even further out from those are fields of fruits, vegetables, coffee, and canopied flower gardens that are harvested and exported across Vietnam. The tempo of life in Dalat is very relaxed, traffic is not frenetic except for the central area, streets are spacious, and the local populace is friendly to foreigners. Dalat is very much a niche tourism town, open to those seeking a respite from the heat of the rest of Vietnam, a change in scenery to lush pine forests and rolling hills, or those seeking world class golf. There is a steady flow during some parts of the year of tourist from all walks of life and places, small hotels, cafe's lining its streets and plenty of small shops offering anything from orchids to knitwear."
+    },    
+    {"Id":16,
+    "Place":"My Son Sanctuary",
+    "Region":"Middle Vietnam",
+    "Season":["Spring", "Summer", "Autumn", "Winter"],
+    "Geography":["Mountainous"],
+    "Location":"My Son Sanctuary is located in the mountainous border Duy Xuyen District of Quang Nam Province.",
+    "Description":"During the 4th to 13th centuries there was a unique culture on the coast of contemporary Vietnam, owing its spiritual origins to the Hinduism of India. This is graphically illustrated by the remains of a series of impressive tower temples in a dramatic site that was the religious and political capital of the Champa Kingdom for most of its existence. My Son Sanctuary dates from the 4th to the 13th centuries CE. It is situated within an elevated geological basin surrounded by a ring of mountains, which provides the watershed for the sacred Thu Bon river. The monuments of the My Son sanctuary are the most important constructions of the My Son civilization. The tower temples have a variety of architectural designs symbolizing the greatness and purity of Mount Meru, the mythical sacred mountain home of Hindu gods at the center of the universe, now symbolically reproduced on Earth in the mountainous homeland of the Cham people. They are constructed in fired brick with stone pillars and decorated with sandstone bas-reliefs depicting scenes from Hindu mythology. Their technological sophistication is evidence of Cham engineering skills while the elaborate iconography and symbolism of the tower-temples give insight into the content and evolution of Cham religious and political thought. The My Son Sanctuary is a remarkable architectural ensemble that developed over a period of ten centuries. It presents a vivid picture of spiritual and political life in an important phase of the history of South-East Asia."
+    },    
+    {"Id":17,
+    "Place":"Nam Du Island",
+    "Region":"Southern Vietnam",
+    "Season":["Spring", "Winter"],
+    "Geography":["Coastal"],
+    "Location":"Sitting in the gulf of Thailand, the Nam Du Archipelago is at the western end of a small chain of islands drifting west of Rach Gia, a thriving port city on the mainland, in Vietnam’s western Mekong Delta region.",
+    "Description":"Nam Du Archipelago, around 40 kilometers away from Phu Quoc Island, is becoming an attractive destination for backpackers heading to the Mekong Delta province of Kien Giang. This pristine island has 21 islets, 11 islets of which are inhabited, while the others remain completely untouched. The immense blue sea and sky, imposing mountains erupting amidst the ocean, endless evergreen primeval forests, long stunning beaches and splendid rock cliffs of Nam Du Archipelago in Kien Giang Province have seen it compared to the 'New Wonder of the World' - Halong Bay in Quang Ninh Province. The archipelago stretches over two communes of An Son and Nam Du with a population of 10,000 people working in fishing and sea-related services. Formed from a volcano, it has numerous six-meter creeks which are advantageous for transportation. As it is endowed with high mountains, Nam Du also is suggested as a great spot for offshore fishermen to flee rough storms."
+    },    
+    {"Id":18,
+    "Place":"Forbidden Mountain",
+    "Region":"Southern Vietnam",
+    "Season":["Spring", "Summer", "Autumn", "Winter"],
+    "Geography":["Mountainous"],
+    "Location":"Forbidden Mountain is also known as Ông Cấm (the Forbidden Lord) or Thiên Cấm Sơn Mountain which is located within the triangle Tịnh Biên - Nhà Bàng - Tri Tôn in An Hảo Commune, Tịnh Biên District, An Giang Province.",
+    "Description":"For Thất Sơn Mountain Range runs along the western side of An Giang is covered by many trees, fertile plains and the convergence of yin and yang in the air, therefore, this area has cool climate all year round  with the average temperature from 18 to 24 degrees Celcius. In addition to the wonderful natural environment, Forbidden Mountain is also known as an ideal place for Buddhist worshipping activities because this place has famous spiritual structures such as Vạn Linh Pagoda, Phật Lớn (Big Buddha) Pagoda, Phật Nhỏ (Small Buddha) Pagoda, the largest Maitreya Statue in Asia and more. During peak season, when Vía Bà Chúa Xứ (Worshipping Holly Mother of the Realm) Festival takes place on Sam Mountain (from 22nd to 26th of April in lunar calendar), million of visitors are going to be attracted  for visiting An Giang Province and worshipping the Holly Mother. These visitors will then continue their journeys by running straight to Forbidden Mountain Tourism Destination (Tịnh Biên) to contemplate one of the natural beauties of  Thất Sơn Mountain Range as well as participating in worshipping activities in the famous pagodas at this tourism destination. According to statistics from An Giang tourism promotion group, there were 1.4 million visitors came to Forbidden Mountain in 2015."
     }
-
 ]
 
 
@@ -126,6 +173,5 @@ def filtered_name(name):
         if tour['Place'] == name:
             filtered_names.append(tour)
     return filtered_names
-# if len(filtered_places) == 0:
-#     print('Sorry, try again')
+
 
